@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ckeditor [editor]="Editor"  (change)="onChange($event)" ></ckeditor>
+
+
+  </div>
+  <hr/>
+  <div class="ion-padding">
+    <p>Rich text:</p>
+    <div innerHTML="{{richText}}"></div>
+  </div>
+
+</ion-content>
